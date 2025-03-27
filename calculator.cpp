@@ -85,6 +85,7 @@ void Calculator::onEqualClicked(){
 
     if(result.isError()){
         ui->txtDisplay->setText("Error");
+        newnumber = true;
     } else {
         ui->txtDisplay->setText(result.toString());
         newnumber = true;
